@@ -8,31 +8,66 @@
 	<link rel="stylesheet" href="../js/vendor/venobox/venobox.css" type="text/css" media="screen">
 </head>
 <body>
-	<div id="app">
+	<div id="index_content">
 	<div class="container">
 		<h1>{{ title }}</h1>
-		<h2><span class="step1">Into</span> <span class="step2">The</span> <span class="step3">Future</span></h2>
-
-		<p class="lead">Example of the timeliner.js jquery plugin with advanced, custom theming. All theming accomplished with CSS and minor modifications to the HTML markup. No modifications to the plugin's core javascript. Note that this demonstration does not fully support older browsers (e.g, before Internet Explorer 9) due to the use of CSS3 properties. Also view the <a href="../timeliner.html">original demo</a>.</p>
+		<h2>
+			<span class="step1">{{ title_tag[0] }}</span>
+			<span class="step2">{{ title_tag[1] }}</span>
+			<span class="step3">{{ title_tag[2] }}</span>
+		</h2>
+		<p class="lead">{{ desc }}</p>
 
 		<div id="timeline" class="timeline-container">
-
 			<button class="timeline-toggle">+ expand all{{ expand }}</button>
-
 			<br class="clear">
 
+
 			<div class="timeline-wrapper">
-				<h2 class="timeline-time"><span>2000</span></h2>
+				<h2 class="timeline-time">
+					<span>{{ nodes[0][0] }}</span>
+				</h2>
 				<dl class="timeline-series">
 					<span class="tick tick-before"></span>
-					<dt id="robots" class="timeline-event"><a>Robots</a></dt>
+					<dt id="robots" class="timeline-event">
+						<a>{{ nodes[0][1][0][0] }}</a>
+					</dt>
+					<span class="tick tick-after"></span>
+					<dd class="timeline-event-content" id="robotsEX">
+						<div class="media">
+							<a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)">
+								<img src="img/event-robots.jpg" alt="singing robots">
+							</a>
+							<p>
+								<a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)">
+									Listen
+								</a>
+							</p>
+						</div><!-- /.media -->
+						<blockquote>
+							<p>{{ nodes[0][1][0][1][0] }}</p>
+						</blockquote>
+						<br class="clear">
+					</dd><!-- /.timeline-event-content -->
+				</dl><!-- /.timeline-series -->
+			</div><!-- /.timeline-wrapper -->
+
+
+			<div class="timeline-wrapper">
+				<h2 class="timeline-time">
+					<span>2000</span>
+				</h2>
+				<dl class="timeline-series">
+					<span class="tick tick-before"></span>
+					<dt id="robots" class="timeline-event">
+						<a>Robots</a>
+					</dt>
 					<span class="tick tick-after"></span>
 					<dd class="timeline-event-content" id="robotsEX">
 						<div class="media">
 							<a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)"><img src="img/event-robots.jpg" alt="singing robots"></a>
 							<p><a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)">Listen</a></p>
 						</div><!-- /.media -->
-
 						<blockquote>
 							<p>The world is very different ever since the robotic uprising of the mid-nineties. There is no more unhappiness.</p>
 							<p>Affirmative.</p>
@@ -43,11 +78,8 @@
 							<p>And the robo-boogie.</p>
 							<p>Oh yes, two kinds of dances.</p>
 						</blockquote>
-
-					<br class="clear">
+						<br class="clear">
 					</dd><!-- /.timeline-event-content -->
-
-
 				</dl><!-- /.timeline-series -->
 			</div><!-- /.timeline-wrapper -->
 
@@ -135,7 +167,7 @@
 					<dd class="timeline-event-content" id="singularityEX">
 
 						<div class="media">
-							<!-- <a href="img/event-singularity-woah.gif"></a> -->
+							<img src="img/event-singularity.gif" alt="">
 							<img src="img/event-singularity.gif" alt="">
 						</div><!-- /.media -->
 
@@ -147,9 +179,7 @@
 			</div>
 
 			<button class="timeline-toggle">+ expand all{{ expand }}</button>
-
 			<br class="clear">
-
 		</div><!-- /#timeline -->
 
 	</div><!-- /.container -->
@@ -171,11 +201,83 @@
 			$('.venobox').venobox();
 		});
 		var app = new Vue({
-		  el: '#app',
+		  el: '#index_content',
 		  data: {
-		    title: '量子力学简史',
+		    title: '量子力学时间轴',
+				title_tag: ['极简','趣味','所有'],
+				desc: '一切始于 19 世纪末 20 世纪初 ……',
+
 				expand: '展开',
-				collapse: '折叠'
+				collapse: '折叠',
+
+				nodes:
+				[//01-all years
+					[//02-each year
+						'1803',//year num
+						[//03-events
+							[//04-each event
+								'双缝干涉',
+								[
+									'双缝干涉详情',
+									'src',
+									'src'
+								]
+							],
+							[//04-each event
+								'event',
+								[
+									'src',
+									'src'
+								]
+							]
+
+					  ]
+					],
+
+					[//02-each year
+						'1875',//year num
+						[//03-events
+							[//04-each event
+								'普朗克不学物理',
+								[
+									'src',
+									'src'
+								]
+							],
+							[//04-each event
+								'event',
+								[
+									'src',
+									'src'
+								]
+							]
+
+						]
+					],
+
+					[//02-each year
+						'1896',//year num
+						[//03-events
+							[//04-each event
+								'居里夫人',
+								[
+									'src',
+									'src'
+								]
+							],
+							[//04-each event
+								'event',
+								[
+									'src',
+									'src'
+								]
+							]
+
+						]
+					]
+
+				]
+
 		  }
 		})
 	</script>
