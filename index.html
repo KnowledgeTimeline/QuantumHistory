@@ -5,7 +5,7 @@
 	<title>量子力学简史</title>
 	<link rel="canonical" href="https://technotarek.com/timeliner/demo-future/timeliner-future.html" />
 	<link rel="stylesheet" href="css/timeliner-future.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="../js/vendor/venobox/venobox.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="js/vendor/venobox/venobox.css" type="text/css" media="screen">
 </head>
 <body>
 	<div id="index_content">
@@ -29,11 +29,11 @@
 				</h2>
 				<dl class="timeline-series">
 					<span class="tick tick-before"></span>
-					<dt id="robots" class="timeline-event">
+					<dt id="robots0" class="timeline-event">
 						<a>{{ nodes[0][1][0][0] }}</a>
 					</dt>
 					<span class="tick tick-after"></span>
-					<dd class="timeline-event-content" id="robotsEX">
+					<dd class="timeline-event-content" id="robots0EX">
 						<div class="media">
 							<a href="https://player.vimeo.com/video/626679" class="venobox" data-type="vimeo" data-overlay="rgba(0,0,0,0.5)">
 								<img src="img/event-robots.jpg" alt="singing robots">
@@ -205,7 +205,7 @@
 		  data: {
 		    title: '量子力学时间轴',
 				title_tag: ['极简','趣味','所有'],
-				desc: '一切始于 19 世纪末 20 世纪初 ……',
+				desc: '1687 年，艾萨克 · 牛顿（Sir Isaac Newton，1643 - 1727）出版了《自然哲学的数学原理》，提出了牛顿运动定律和引力定律，被认为奠定了经典力学的基础 …… 1900 年元旦这天，热力学之父、开尔文男爵威廉·汤姆森在一个演讲中说：“在已经基本建成的物理学大厦中，后辈物理学家只要做一些零碎的修补工作就行了 …… 但是，在物理学晴朗的天空的远处，还有两朵小小的令人不安的乌云”。关于量子力学故事的一切悄悄地从 19 世纪末 20 世纪初开始发生 ……',
 
 				expand: '展开',
 				collapse: '折叠',
@@ -216,21 +216,27 @@
 						'1803',//year num
 						[//03-events
 							[//04-each event
-								'双缝干涉',
+								'杨氏双缝干涉实验',
 								[
-									'双缝干涉详情',
-									'src',
-									'src'
-								]
-							],
-							[//04-each event
-								'event',
-								[
+									'有个英国医生叫托马斯·杨（Thomas Young）演示光子或电子等微观物体的波动性与粒子性的实验',
 									'src',
 									'src'
 								]
 							]
+					  ]
+					],
 
+					[//02-each year
+						'1864',//year num
+						[//03-events
+							[//04-each event
+								'麦克斯韦电磁理论',
+								[
+									'',
+									'src',
+									'src'
+								]
+							]
 					  ]
 					],
 
@@ -240,18 +246,10 @@
 							[//04-each event
 								'普朗克不学物理',
 								[
-									'src',
-									'src'
-								]
-							],
-							[//04-each event
-								'event',
-								[
-									'src',
+									'普朗克在1875年上大学的时候，他的老师劝他不要学物理 —— 因为物理学已经很成熟了，盛宴已过，没有多少留给你研究的空间了。',
 									'src'
 								]
 							]
-
 						]
 					],
 
@@ -261,24 +259,447 @@
 							[//04-each event
 								'居里夫人',
 								[
-									'src',
-									'src'
-								]
-							],
-							[//04-each event
-								'event',
-								[
-									'src',
+									'1896 年前后，居里夫人等人发现铀原子能自发地往外发射某种射线。居里夫人把这个现象命名为“放射性”，并且正确地推测出，放射性不是因为原子和原子之间的化学反应，而是原子自身的某种活动。科学家据此怀疑，原子内部应该还有结构。',
 									'src'
 								]
 							]
+						]
+					],
 
+					[//02-each year
+						'1897',//year num
+						[//03-events
+							[//04-each event
+								'微粒带负电命名为“电子”',
+								[
+									'约瑟夫·汤姆孙（Sir Joseph John Thomson）发现阴极射线中有一种“微粒”，在外加的电磁场中会发生偏转。汤姆孙意识到这种微粒带负电，并且把它命名为“电子”。这是人们第一次明确知道原子之中还有别的东西，汤姆孙因此得到1904年的诺贝尔物理奖',
+									'src'
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1900',//year num
+						[//03-events
+							[//04-each event
+								'令人不安的乌云',
+								[
+									'元旦这天，热力学之父、开尔文男爵威廉·汤姆森在一个演讲中说',
+									''
+								]
+							],
+							[//04-each event
+								'普朗克在自己家里和一位实验物理学家讨论了黑体辐射，提出普朗克常数',
+								[
+									'他想，我能不能先不管物理，能不能直接在数学上凑一个公式描写这条曲线呢？',
+									''
+								]
+							],
+							[//04-each event
+								'泡利出生',
+								[
+									'沃尔夫冈·泡利（Wolfgang Ernst Pauli）泡利出生于1900年，是个少年天才',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1901',//year num
+						[//03-events
+							[//04-each event
+								'海森堡出生',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1905',//year num
+						[//03-events
+							[//04-each event
+								'“爱因斯坦奇迹年”',
+								[
+									'光电效应',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1911',//year num
+						[//03-events
+							[//04-each event
+								'卢瑟福',
+								[
+									'让两个学生拿阿尔法粒子轰炸金箔',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1912',//year num
+						[//03-events
+							[//04-each event
+								'玻尔',
+								[
+									'尼尔斯·玻尔（Niels Henrik David Bohr）博士毕业了。他先加入了汤姆孙的研究组，但是因为批评汤姆孙的模型而受到打压，又转投了卢瑟福。',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1913',//year num
+						[//03-events
+							[//04-each event
+								'玻尔原子模型',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1922',//year num
+						[//03-events
+							[//04-each event
+								'实验物理学家就已经发现了自旋',
+								[
+									'以发明者的名字命名的，叫“斯特恩-盖拉赫实验”',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1923',//year num
+						[//03-events
+							[//04-each event
+								'康普顿X射线散射证实光的粒子性',
+								[
+									'以发明者的名字命名的，叫“斯特恩-盖拉赫实验”',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1924',//year num
+						[//03-events
+							[//04-each event
+								'德布罗意',
+								[
+									'写好了自己的博士毕业论文。这篇论文只有16页，其中只说了一个思想：所有物质都有波动性',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1925',//year num
+						[//03-events
+							[//04-each event
+								'海森堡，波恩，诺尔当',
+								[
+									'矩阵力学',
+									''
+								]
+							]
+						],
+						[//03-events
+							[//04-each event
+								'泡利',
+								[
+									'不相容原理',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1926',//year num
+						[//03-events
+							[//04-each event
+								'薛定谔',
+								[
+									'波动方程',
+									''
+								]
+							],
+							[//04-each event
+								'波恩',
+								[
+									'波函数的概率解释',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1927',//year num
+						[//03-events
+							[//04-each event
+								'电子打在硅晶体',
+								[
+									'',
+									''
+								]
+							],
+							[//04-each event
+								'海森堡不确定性原理',
+								[
+									'',
+									''
+								]
+							],
+							[//04-each event
+								'量子隧穿',
+								[
+									'',
+									''
+								]
+							],
+							[//04-each event
+								'第五届索尔维会议',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1928',//year num
+						[//03-events
+							[//04-each event狄拉克方程
+								'伽莫夫（George Gamow），说不应该舍弃量子隧穿这个解',
+								[
+									'量子隧穿效应解释了原子核的a衰变',
+									''
+								]
+							],
+							[//04-each event
+								'相对论的量子力学方程，狄拉克方程',
+								[
+									'预言正电子',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1930',//year num
+						[//03-events
+							[//04-each event
+								'第六届索尔维会议',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1931',//year num
+						[//03-events
+							[//04-each event
+								'狄拉克发现他那个方程的正电子',
+								[
+									'另一个新东西，叫做“自旋”',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1932',//year num
+						[//03-events
+							[//04-each event
+								'戴维安德森宇宙射线发现了正电子，证实了狄拉克的预言',
+								[
+									'',
+									''
+								]
+							],
+							[//04-each event
+								'冯诺依曼建立量子力学数学基础',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1935',//year num
+						[//03-events
+							[//04-each event
+								'爱因斯坦EPR佯谬',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1942',//year num
+						[//03-events
+							[//04-each event
+								'曼哈顿工程开始',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1945',//year num
+						[//03-events
+							[//04-each event
+								'新墨西哥州沙漠爆炸当量为22000吨的原子弹试爆',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1955',//year num
+						[//03-events
+							[//04-each event
+								'爱因斯坦孤独地去世了',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1961',//year num
+						[//03-events
+							[//04-each event
+								'德国约恩孙电子做成了杨氏双缝实验',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1962',//year num
+						[//03-events
+							[//04-each event
+								'玻尔在1962年去世',
+								[
+									'去世前一天用过的黑板上，人们发现一个图形',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1981',//year num
+						[//03-events
+							[//04-each event
+								'发明的“扫描隧道显微镜”',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'1987',//year num
+						[//03-events
+							[//04-each event
+								'全同粒子',
+								[
+									'洪-欧-曼德尔效应',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'2016',//year num
+						[//03-events
+							[//04-each event
+								'量子通信卫星-墨子号',
+								[
+									'',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'2017',//year num
+						[//03-events
+							[//04-each event
+								'墨子号完成三个任务',
+								[
+									'千公里级量子纠缠分发，星地高速量子密钥分发，地星量子隐形传态',
+									''
+								]
+							]
+						]
+					],
+
+					[//02-each year
+						'2018',//year num
+						[//03-events
+							[//04-each event
+								'谷歌测试包含72个量子比特的量子计算机芯片',
+								[
+									'',
+									''
+								]
+							]
 						]
 					]
 
-				]
 
-		  }
+
+
+				]//end nodes
+		  }//end data
 		})
 	</script>
 
